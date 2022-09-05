@@ -9,7 +9,7 @@ namespace Blazor.Server
 
         protected override void OnInitialized()
         {
-            NavigationManager.NavigateTo("Identity/Account/Login", true);
+            protected override void OnInitialized() => NavigationManager.NavigateTo("Identity/Account/Login", true);
         }
     }
 }
